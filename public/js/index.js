@@ -19,3 +19,9 @@ $(".think").click(function(){
     $(".step-text").children(".step1").fadeIn(300).addClass("active");
     $(".say").addClass("flash");
 })
+$(".say").click(function(){
+    $(this).addClass("active");
+    $(".step-text").children("p").hide();
+    $(".step-text").children(".step2").fadeIn(300).addClass("active");
+    $(".will").addClass("flash");
+})
