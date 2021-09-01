@@ -1,0 +1,258 @@
+// header
+header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+  .logo {
+    img {
+      height: 50px;
+    }
+  }
+  .main-nav {
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 30px;
+        position: relative;
+        a {
+          color: $main-color;
+          font-weight: bold;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 2px;
+          border-radius: 100px;
+          background-color: $main-color;
+          top: calc(100% + 5px);
+          left: 50%;
+          transform: translateX(-50%);
+          transition: 0.3s;
+        }
+        &:hover {
+          &::after {
+            width: 80%;
+          }
+        }
+        &.light {
+          a {
+            padding: 10px 40px;
+            border: 2px solid $main-color;
+            margin: 0;
+            transition: 0.3s;
+            &.lightup {
+              border-radius: 10px 0 0 10px;
+              background-color: $main-color;
+              color: #fff;
+              margin-right: -2px;
+              &:hover {
+                background-color: transparent;
+                color: $main-color;
+              }
+            }
+            &.find {
+              border-radius: 0 10px 10px 0;
+              &:hover {
+                background-color: $main-color;
+                color: #fff;
+              }
+            }
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu {
+    display: none;
+}
+
+// main
+.main-title {
+  position: relative;
+  .title-name {
+    font-size: 35px;
+    letter-spacing: 8px;
+    text-align: center;
+    // display: none;
+    .big {
+      font-size: 45px;
+    }
+  }
+  .title-bar {
+    position: absolute;
+    // width: 70px;
+    width: 0;
+    height: 2px;
+    border-radius: 100px;
+    background-color: $main-color;
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease-in-out;
+    &.active {
+      width: 70px;
+    }
+  }
+}
+
+.sub-title {
+  font-size: 24px;
+  text-align: center;
+  color: $main-color;
+  letter-spacing: 8px;
+  margin-top: 40px;
+  .big {
+    font-size: 30px;
+  }
+}
+
+.btn {
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  img {
+    width: 7px;
+    margin-left: 10px;
+    &.hover {
+      display: none;
+    }
+  }
+  &:hover {
+    img {
+      &.origin {
+        display: none;
+      }
+      &.hover {
+        display: inline-block;
+      }
+    }
+  }
+  &-border {
+    &-main {
+      border: 1px solid $main-color;
+      color: $main-color;
+      a {
+        color: $main-color;
+      }
+      &:hover {
+        background-color: $main-color;
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    &-second {
+      border: 1px solid $second-color;
+      color: $second-color;
+      a {
+        color: $second-color;
+      }
+      &:hover {
+        background-color: $second-color;
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    &-white {
+        border: 1px solid #fff;
+        color: #fff;
+        a {
+          color: #fff;
+        }
+        &:hover {
+          background-color: $second-color;
+          border-color: $second-color;
+          color: #24110A;
+          a {
+            color: #24110A;
+          }
+        }
+      }
+  }
+  &-bg {
+    &-main {
+      border: 1px solid $main-color;
+      background-color: $main-color;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $main-color;
+        a {
+          color: $main-color;
+        }
+      }
+    }
+    &-second {
+      border: 1px solid $second-color;
+      background-color: $second-color;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $second-color;
+        a {
+          color: $second-color;
+        }
+      }
+    }
+  }
+}
+
+.swiper-container {
+  .swiper-pagination-bullet {
+    background-color: #ecddd1;
+    opacity: 1;
+    &-active {
+      background-color: $main-color;
+    }
+  }
+}
+
+// footer
+footer {
+  .top {
+    background-color: #7a665a;
+    .logo {
+      width: 250px;
+    }
+    .contact {
+      ul {
+        li {
+          .contact-box {
+            margin-bottom: 15px;
+            line-height: 1;
+            img {
+              height: 20px;
+              margin-right: 5px;
+              vertical-align: middle;
+              &.mail {
+                  height: 15px;
+              }
+            }
+            span {
+              color: #fff;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}
