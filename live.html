@@ -1,62 +1,155 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>福智僧團活動專區｜送出尋燈</title>
     <!-- css -->
-    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./public/css/aos/aos.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
     <main class="live-main position-relative">
-        <div class="bg position-absolute">
-            <div class="swiper-container live">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <img src="./public/img/find_2.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./public/img/find_1.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./public/img/find_2.png" alt="">
-                  </div>
-                </div>     
+      <div class="bg position-absolute h-100 w-100 swiper-box">
+        <div class="swiper-container h-100 w-100 live-swiper">
+          <div class="swiper-wrapper h-100 w-100">
+            <div class="swiper-slide">
+              <img src="./public/img/find_2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/img/find_1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./public/img/find_2.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="live-content position-absolute">
-            <div class="before">
-            <p class="live-alert">
-                隨喜您點上一盞祈願燈，<br>
-                <span class="ml-5">一燈能破千年暗、一智能滅萬年愚</span>
-            </p>
-            <div class="loading-text">
-                <span>湖山大殿連線中</span>
-                <div class="arrow">
-                    <img class="arrow1" src="./public/img/arrow_deep-brown.svg" alt="">
-                    <img class="arrow2" src="./public/img/arrow_deep-brown.svg" alt="">
-                    <img class="arrow3" src="./public/img/arrow_deep-brown.svg" alt="">
-                </div>
+      </div>
+      <div class="live-content position-relative w-100 h-100">
+        <div class="before position-absolute">
+          <p class="live-alert">
+            隨喜您點上一盞祈願燈，<br />
+            <span class="ms-5">一燈能破千年暗、一智能滅萬年愚</span>
+          </p>
+          <div
+            class="
+              loading-text
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
+            <span>湖山大殿連線中</span>
+            <div class="arrow">
+              <img class="arrow1" src="./public/img/arrow_loading.png" alt="" />
+              <img class="arrow2" src="./public/img/arrow_loading.png" alt="" />
+              <img class="arrow3" src="./public/img/arrow_loading.png" alt="" />
             </div>
-            <p class="wait">等候時間：倒數<span class="second">05</span>秒</p>
+          </div>
+          <p class="wait">等候時間：倒數<span class="second"></span>秒</p>
         </div>
         <div class="after position-absolute">
-            <div class="pic">
-                <img src="./public/img/picture_2.png" alt="">
+          <div class="pic-card">
+            <div class="pic-box">
+              <img src="./public/img/picture_2.png" alt="" />
             </div>
-            <p class="thank"><span clas="big">感謝您</span>，祝福您福智圓滿，<br>
-                生生增上</p>
+            <p class="pic-text">
+              <span class="big">感謝您</span>，祝福您福智圓滿，<br />
+              生生增上
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="menu">
+        <div class="menu-icon">
+          <div class="icon-box">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+          </div>
+        </div>
+        <nav class="main-menu">
+          <a href="./index.html" class="logo"
+            ><img src="./public/img/logo_header.png" alt="福智僧團活動專區"
+          /></a>
+          <ul class="menu-nav">
+            <li><a href="#">關於點燈</a></li>
+            <li class="">
+              <span>寺院巡禮</span
+              ><img
+                class="arrow"
+                src="./public/img/arrow_light-brown.svg"
+                alt=""
+              />
+              <ul class="sub-menu">
+                <li>
+                  <a href="#"
+                    ><img
+                      class="origin"
+                      src="./public/img/triangle_light-brown.svg"
+                      alt=""
+                    /><img
+                      class="hover"
+                      src="./public/img/triangle_deep-brown.svg"
+                      alt=""
+                    /><span>鳳山寺 大雄寶殿</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      class="origin"
+                      src="./public/img/triangle_light-brown.svg"
+                      alt=""
+                    /><img
+                      class="hover"
+                      src="./public/img/triangle_deep-brown.svg"
+                      alt=""
+                    /><span>湖山分院 大雄寶殿</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">我要點燈</a></li>
+            <li><a href="#">我要尋燈</a></li>
+          </ul>
+
+          <div class="copyright">
+            <p>Copyright ©2015-2021 福智僧團全球資訊網 All rights reserved.</p>
+          </div>
+        </nav>
+      </div>
     </main>
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/index.js"></script>
-</body>
+
+    <script>
+      var swiper = new Swiper(".live-swiper", {
+        slidesPerView: 1,
+        loop: true, 
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+      var second = 5;
+      $(".wait").children(".second").text(second);
+      var mm = window.setInterval(function () {
+        second -= 1;
+        $(".wait").children(".second").text(second);
+        if (second === 0) {
+          clearInterval(mm);
+          $(".live-content").children(".before").fadeOut(300);
+          $(".live-content").children(".after").delay(300).fadeIn(700);
+          swiper.autoplay.stop();
+        }
+      }, 1000);
+    </script>
+  </body>
 </html>

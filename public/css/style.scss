@@ -25,6 +25,14 @@ input,select,textarea {
     outline: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 button {
     border: 0;
     background-color: transparent;
@@ -148,3 +156,4 @@ main {
 
 @import "./page/index";
 @import "./page/lightup";
+@import "./page/find";

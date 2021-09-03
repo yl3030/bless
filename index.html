@@ -25,7 +25,7 @@
         <a href="./index.html" class="logo"
           ><img src="./public/img/logo_header.png" alt="福智僧團活動專區"
         /></a>
-        <nav class="main-nav">
+        <nav class="main-nav d-lg-block d-none">
           <ul>
             <li><a href="#">關於點燈</a></li>
             <li><a href="#">寺院巡禮</a></li>
@@ -35,6 +35,65 @@
             </li>
           </ul>
         </nav>
+        <div class="menu">
+          <div class="menu-icon position-static">
+            <div class="icon-box deep-bg">
+              <div class="bar top"></div>
+              <div class="bar middle"></div>
+              <div class="bar bottom"></div>
+            </div>
+          </div>
+          <nav class="main-menu top-70">
+            <a href="./index.html" class="logo"
+              ><img src="./public/img/logo_header.png" alt="福智僧團活動專區"
+            /></a>
+            <ul class="menu-nav">
+              <li><a href="#">關於點燈</a></li>
+              <li class="">
+                <span>寺院巡禮</span
+                ><img
+                  class="arrow"
+                  src="./public/img/arrow_light-brown.svg"
+                  alt=""
+                />
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#"
+                      ><img
+                        class="origin"
+                        src="./public/img/triangle_light-brown.svg"
+                        alt=""
+                      /><img
+                        class="hover"
+                        src="./public/img/triangle_deep-brown.svg"
+                        alt=""
+                      /><span>鳳山寺 大雄寶殿</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        class="origin"
+                        src="./public/img/triangle_light-brown.svg"
+                        alt=""
+                      /><img
+                        class="hover"
+                        src="./public/img/triangle_deep-brown.svg"
+                        alt=""
+                      /><span>湖山分院 大雄寶殿</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">我要點燈</a></li>
+              <li><a href="#">我要尋燈</a></li>
+            </ul>
+  
+            <div class="copyright">
+              <p>Copyright ©2015-2021 福智僧團全球資訊網 All rights reserved.</p>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -91,9 +150,9 @@
       <!-- 寺院巡禮 -->
       <div class="tour position-relative main-pb main-mb">
         <div class="bar position-absolute"></div>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-5">
-            <div class="container-pl pt-5 pe-5">
+            <div class="container-pl pt-xl-5 pt-0 pe-xl-5 pe-4 pb-md-0 pb-5">
               <div class="text">
                 <h2 class="main-title">
                   <p
@@ -106,7 +165,7 @@
                   </p>
                   <div class="title-bar"></div>
                 </h2>
-                <p class="content text-center my-5 lh-lg">
+                <p class="content text-center mt-5 mb-xl-5 mb-3 lh-lg">
                   日常老和尚：世間的光明最主要的來源來自三處，太陽、月亮和燈。太陽的光是無比的，月亮的光是清涼的，但太陽只有一個，
                 </p>
               </div>
@@ -118,7 +177,7 @@
                     align-items-center
                     justify-content-center
                     py-2
-                    px-4
+                    px-lg-4 px-2
                   "
                 >
                   <span class="fs-4 me-2 mb-2">鳳山寺</span><span>大雄寶殿</span
@@ -141,7 +200,7 @@
                     align-items-center
                     justify-content-center
                     py-2
-                    px-4
+                    px-lg-4 px-2
                   "
                 >
                   <span class="fs-4 me-2 mb-2">湖山分院</span
@@ -187,7 +246,7 @@
         <div class="container">
           <div class="slogan position-absolute">一念祝福善念，從心開始</div>
           <div class="row">
-            <div class="col-md-6 position-relative">
+            <div class="col-lg-6 position-relative">
               <div
                 class="swiper-container lightup-pic"
                 data-aos="fade-right"
@@ -208,8 +267,8 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="text ps-5">
+            <div class="col-lg-6">
+              <div class="text ps-lg-5 ps-0">
                 <h2 class="main-title">
                   <p
                     class="title-name"
@@ -222,21 +281,25 @@
                   </p>
                   <div class="title-bar"></div>
                 </h2>
-                <div class="content mx-auto w-75">
+                <div class="content mx-auto">
                   <p class="text-center mt-5 lh-lg">
                     用一盞燈讓您內心的善良照亮每個生命黑暗的角落，照亮每個正在祈求的生命!我們的心願可以學習像佛菩薩那樣，努力用菩提心意陪伴每個想要離苦得樂的有情呀!
                   </p>
-                  <div class="btn-box d-flex justify-content-between mt-5">
-                    <button class="btn btn-bg-main mx-2 w-50">
+                  <div class="btn-box row justify-content-between mt-5">
+                    <div class="col-sm-6 my-sm-0 my-2">
+                    <button class="btn btn-bg-main w-100">
                       <a href="#" class="d-block py-1"
                         >湖山分院 <span class="fs-4 ms-2">祈願燈</span></a
                       >
                     </button>
-                    <button class="btn btn-bg-second mx-2 w-50">
+                  </div>
+                  <div class="col-sm-6 my-sm-0 my-2">
+                    <button class="btn btn-bg-second w-100">
                       <a href="#" class="d-block py-1"
                         >鳳山寺 <span class="fs-4 ms-2">藥師燈</span></a
                       >
                     </button>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -461,9 +524,9 @@
     </main>
     <footer>
       <div class="top main-py">
-        <div class="container d-flex justify-content-between align-items-center">
-          <img class="logo" src="./public/img/logo_footer.png" alt="" />
-          <div class="contact">
+        <div class="container d-md-flex d-block justify-content-between align-items-center">
+          <img class="logo d-block mx-md-0 mx-auto mb-md-0 mb-5" src="./public/img/logo_footer.png" alt="" />
+          <div class="contact mx-md-0 mx-auto mb-md-0 mb-5">
             <ul>
               <li>
                 <div class="contact-box">

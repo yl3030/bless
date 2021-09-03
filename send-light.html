@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>福智僧團活動專區｜送出尋燈</title>
     <!-- css -->
-    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./public/css/aos/aos.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container justify-content-between align-items-center">
-            <a href="./index.html" class="logo"><img src="./public/img/logo_header.png" alt="福智僧團活動專區"></a>
-            <nav>
-                <ul>
-                    <li><a href="#">關於點燈</a></li>
-                    <li><a href="#">寺院巡禮</a></li>
-                    <li class="light"><a>
-                        <button>我要點燈</button>
-                        <button>我要巡燈</button>
-                    </a></li>
-                </ul>
-            </nav>
-        </div>
+      <div
+        class="
+          container
+          d-flex
+          h-100
+          justify-content-between
+          align-items-center
+        "
+      >
+        <a href="./index.html" class="logo"
+          ><img src="./public/img/logo_header.png" alt="福智僧團活動專區"
+        /></a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">關於點燈</a></li>
+            <li><a href="#">寺院巡禮</a></li>
+            <li class="light d-inline-flex">
+              <a href="#" class="lightup">我要點燈</a>
+              <a href="#" class="find">我要巡燈</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="find-main send-main">
-        <div class="send-content">
-            <p class="send-alert">
-                隨喜您，今年度已點 <span class="big">3</span> 盞燈。<br>
-請點選 “觀看live畫面”即時觀賞現場畫面。
-            </p>
-            <div class="pic">
-                <div class="pic-box">
-                    <img src="./public/img/picture_1.png" alt="">
-                </div>
-                <p class="name"><span class="big">邱嘉嘉</span> 闔家</p>
-            </div>
-            <button><a href="#">觀看live畫面</a></button>
-    </div>
+      <div class="send-content">
+        <p class="send-alert">
+          隨喜您，今年度已點 <span class="big">3</span> 盞燈。<br />
+          請點選 “觀看live畫面”即時觀賞現場畫面。
+        </p>
+        <div class="pic-card">
+          <div class="pic-box">
+            <img src="./public/img/picture_1.png" alt="" />
+          </div>
+          <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+        </div>
+        <button class="btn btn-border-white d-block my-5 mx-auto"><a class="py-2 px-5 d-block fs-5" href="#">觀看live畫面</a></button>
+      </div>
     </main>
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
     <script src="./public/js/index.js"></script>
-</body>
+  </body>
 </html>
