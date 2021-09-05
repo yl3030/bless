@@ -672,6 +672,13 @@ footer .top .contact ul li .contact-box span {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .pic-card {
+    width: calc(100% - 30px);
+    padding: 30px 20px;
+  }
+}
+
 .banner .swiper-slide {
   width: 100%;
   padding-bottom: 50%;
@@ -833,6 +840,10 @@ footer .top .contact ul li .contact-box span {
   color: #fff;
 }
 
+.wantfind .text .content {
+  width: 30%;
+}
+
 .story .swiper-story-box {
   padding: 0 80px;
   margin-top: 80px;
@@ -912,14 +923,29 @@ footer .top .contact ul li .contact-box span {
   .light-up .text {
     margin-bottom: 75px;
   }
+  .wantfind .text .content {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 575px) {
   .banner .swiper-slide {
     padding-bottom: 100%;
   }
+  .banner .arrow.swiper-button-next {
+    right: 15px;
+  }
+  .banner .arrow.swiper-button-prev {
+    left: 15px;
+  }
   .slogan {
     display: none;
+  }
+  .wantfind .text .content {
+    width: 80%;
+  }
+  .gototop {
+    right: 15px;
   }
 }
 
@@ -1159,9 +1185,31 @@ footer .top .contact ul li .contact-box span {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .lightup-main .content .step .text.active::after {
+    display: none;
+  }
+  .lightup-main .content .step-text {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  .lightup-main .content .step-text p.step1::after {
+    left: calc(50% - 33.3333%);
+  }
+  .lightup-main .content .step-text p.step2::after {
+    left: calc(50% - 33.3333%);
+  }
+  .lightup-main .content .step-text p.step3::after {
+    right: calc(50% - 33.3333%);
+  }
+  .lightup-main .content .step-text p.active::after {
+    width: 66.6666% !important;
+  }
+}
+
 .find-content {
   max-width: 600px;
-  margin: 100px auto 0;
+  margin: 100px auto;
   padding: 0 20px;
 }
 
@@ -1178,11 +1226,11 @@ footer .top .contact ul li .contact-box span {
   color: #2b2b2b;
   font-size: 18px;
   letter-spacing: 2px;
-  margin-bottom: 25px;
 }
 
 .find-content form {
   border-top: 1px solid #d1d1d1;
+  margin-bottom: 100px;
 }
 
 .find-content form input {
@@ -1228,6 +1276,7 @@ footer .top .contact ul li .contact-box span {
   color: #fff;
   text-align: center;
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 
 .send-main .send-content .send-alert .big {
@@ -1276,6 +1325,9 @@ footer .top .contact ul li .contact-box span {
 }
 
 .live-main .live-content .before {
+  max-width: 440px;
+  padding: 0 15px;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1286,6 +1338,10 @@ footer .top .contact ul li .contact-box span {
   color: #fff;
   font-size: 24px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.87);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 30px;
 }
 
 .live-main .live-content .before .loading-text {
@@ -1294,6 +1350,7 @@ footer .top .contact ul li .contact-box span {
   border-radius: 100px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
 }
 
 .live-main .live-content .before .loading-text span {
@@ -1346,6 +1403,8 @@ footer .top .contact ul li .contact-box span {
   left: 15vw;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  max-width: 400px;
+  width: 100%;
 }
 
 .live-main .live-content .after .pic-card {
@@ -1358,6 +1417,11 @@ footer .top .contact ul li .contact-box span {
 
 .live-main .live-content .after .pic-card .pic-text {
   color: #fff;
+  font-size: 18px;
+}
+
+.live-main .live-content .after .pic-card .pic-text .big {
+  font-size: 24px;
 }
 
 @-webkit-keyframes loading1 {
@@ -1447,6 +1511,24 @@ footer .top .contact ul li .contact-box span {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .live-main .live-content .after {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .live-main .live-content .before .live-alert {
+    font-size: 18px;
+    margin: 0 auto 20px;
+  }
+  .live-main .live-content .before .wait {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

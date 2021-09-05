@@ -197,3 +197,45 @@
     box-shadow: none;
   }
 }
+
+@media screen and (max-width:600px) {
+  .lightup-main {
+    .content {
+      .step {
+        .text {
+          &.active {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      } 
+      .step-text {
+        font-size: 18px;
+        padding: 0 15px;
+        p {
+          &.step1{
+            &::after {
+              left: calc(50% - 33.3333%);
+            }
+          }
+          &.step2{
+            &::after {
+              left: calc(50% - 33.3333%);
+            }
+          }
+          &.step3{
+            &::after {
+              right: calc(50% - 33.3333%);
+            }
+          }
+          &.active {
+            &::after {
+              width: 66.6666% !important;
+            }
+          }
+        }
+      } 
+    } 
+  }
+}

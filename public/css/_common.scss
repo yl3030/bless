@@ -475,3 +475,10 @@ footer {
     } 
   } 
 }
+
+@media screen and (max-width:400px) {
+  .pic-card {
+    width: calc(100% - 30px);
+    padding: 30px 20px;
+  }
+}

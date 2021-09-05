@@ -1,6 +1,6 @@
 .find-content {
   max-width: 600px;
-  margin: 100px auto 0;
+  margin: 100px auto;
   padding: 0 20px;
   .main-title {
     margin-bottom: 20px;
@@ -13,10 +13,10 @@
     color: #2b2b2b;
     font-size: 18px;
     letter-spacing: 2px;
-    margin-bottom: 25px;
   }
   form {
     border-top: 1px solid #d1d1d1;
+    margin-bottom: 100px;
     input {
       width: 100%;
       margin: 5px 0;
@@ -46,6 +46,7 @@
       color: #fff;
       text-align: center;
       margin-bottom: 30px;
+      padding: 0 15px;
       .big {
         font-size: 22px;
         margin: 0 8px;
@@ -88,6 +89,9 @@
   .live-content {
     z-index: 10;
     .before {
+      max-width: 440px;
+      padding: 0 15px;
+      width: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -96,12 +100,15 @@
         color: #fff;
         font-size: 24px;
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.87);
+        width: fit-content;
+        margin: 0 auto 30px;
       }
       .loading-text {
         padding: 10px 20px;
         background-color: #fff;
         border-radius: 100px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        margin: 0 auto;
         span {
           color: $main-color;
           font-size: 18px;
@@ -141,6 +148,8 @@
       top: 50%;
       left: 15vw;
       transform: translateY(-50%);
+      max-width: 400px;
+      width: 100%;
       .pic-card {
           background-image: url(/public/img/find_card_bg.png);
           background-size: cover;
@@ -149,6 +158,10 @@
           background-color: transparent;
           .pic-text {
               color: #fff;
+              font-size: 18px;
+              .big {
+                font-size: 24px;  
+              }
           }
       }
     }
@@ -198,4 +211,31 @@
   100% {
     opacity: 1;
   }
+}
+
+@media screen and(max-width:575px){
+  .live-main {
+    .live-content {
+      .after {
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    } 
+  } 
+}
+
+@media screen and(max-width:440px) {
+  .live-main {
+    .live-content {
+      .before {
+        .live-alert {
+          font-size: 18px;
+          margin: 0 auto 20px;
+        }
+        .wait {
+          font-size: 15px;
+        }
+      } 
+    } 
+  } 
 }
