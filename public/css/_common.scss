@@ -402,8 +402,7 @@ header {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
-  background-color: rgba(230, 206, 151, 0.72);
-  padding: 35px;
+  padding: 25px;
   border-radius: 10px;
   .pic-box {
     width: 100%;
@@ -417,12 +416,26 @@ header {
     }
   }
   .pic-text {
-    color: #643e34;
     text-align: center;
     margin: 20px 0 0;
     font-size: 22px;
     .big {
       font-size: 28px;
+    }
+  }
+  &.bg {
+    &-main {
+      background-color: rgba(230, 206, 151, 0.72);
+      .pic-text {
+        color: #643e34;
+      }
+    }
+    &-blue {
+      background-color: #9FC1D9;
+      .pic-text {
+        color: #41648E;
+      }
+      
     }
   }
 }

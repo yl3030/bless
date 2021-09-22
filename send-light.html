@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <div class="menu">
+        <div class="menu d-lg-none d-block">
           <div class="menu-icon position-static">
             <div class="icon-box deep-bg">
               <div class="bar top"></div>
@@ -88,29 +88,129 @@
               <li><a href="#">我要點燈</a></li>
               <li><a href="#">我要尋燈</a></li>
             </ul>
-  
+
             <div class="copyright">
-              <p>Copyright ©2015-2021 福智僧團全球資訊網 All rights reserved.</p>
+              <p>
+                Copyright ©2015-2021 福智僧團全球資訊網 All rights reserved.
+              </p>
             </div>
           </nav>
         </div>
       </div>
     </header>
     <main class="find-main send-main">
-      <div class="send-content">
-        <p class="send-alert">
-          隨喜您，今年度已點 <span class="big">3</span> 盞燈。<br />
-          請點選 “觀看live畫面”即時觀賞現場畫面。
-        </p>
-        <div class="pic-card">
-          <div class="pic-box">
-            <img src="./public/img/picture_1.png" alt="" />
+      <p class="send-alert">
+        隨喜您，今年度已點 <span class="big">3</span> 盞燈。<br />
+        請點選 “觀看祈願燈”“觀看藥師燈”即時觀賞現場畫面。
+      </p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="send-content">
+              <div class="pic-card bg-main">
+                <div class="pic-box">
+                  <img src="./public/img/picture_1.png" alt="" />
+                </div>
+                <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+                <button class="w-100 btn btn-border-white d-block mt-4 mx-auto" data-bs-toggle="modal" data-bs-target="#hint">
+                  <a class="py-2 d-block fs-5"
+                    >觀看祈願燈</a
+                  >
+                </button>
+              </div>
+            </div>
           </div>
-          <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="send-content">
+              <div class="pic-card bg-blue">
+                <div class="pic-box">
+                  <img src="./public/img/picture_3.jpg" alt="" />
+                </div>
+                <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+                <button class="w-100 btn btn-border-white d-block mt-4 mx-auto">
+                  <a class="py-2 d-block fs-5" href="./live.html"
+                    >觀看藥師燈</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="send-content">
+              <div class="pic-card bg-main">
+                <div class="pic-box">
+                  <img src="./public/img/picture_1.png" alt="" />
+                </div>
+                <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+                <button class="w-100 btn btn-border-white d-block mt-4 mx-auto">
+                  <a class="py-2 d-block fs-5" href="./live.html"
+                    >觀看祈願燈</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="send-content">
+              <div class="pic-card bg-blue">
+                <div class="pic-box">
+                  <img src="./public/img/picture_3.jpg" alt="" />
+                </div>
+                <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+                <button class="w-100 btn btn-border-white d-block mt-4 mx-auto">
+                  <a class="py-2 d-block fs-5" href="./live.html"
+                    >觀看藥師燈</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="send-content">
+              <div class="pic-card bg-main">
+                <div class="pic-box">
+                  <img src="./public/img/picture_1.png" alt="" />
+                </div>
+                <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+                <button class="w-100 btn btn-border-white d-block mt-4 mx-auto">
+                  <a class="py-2 d-block fs-5" href="./live.html"
+                    >觀看祈願燈</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="send-content">
+              <div class="pic-card bg-blue">
+                <div class="pic-box">
+                  <img src="./public/img/picture_3.jpg" alt="" />
+                </div>
+                <p class="pic-text"><span class="big">邱嘉嘉</span> 闔家</p>
+                <button class="w-100 btn btn-border-white d-block mt-4 mx-auto">
+                  <a class="py-2 d-block fs-5" href="./live.html"
+                    >觀看藥師燈</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-border-white d-block my-5 mx-auto"><a class="py-2 px-5 d-block fs-5" href="./live.html">觀看live畫面</a></button>
       </div>
     </main>
+    <div class="modal fade hint-modal" id="hint" tabindex="-1" aria-labelledby="hintLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img data-bs-dismiss="modal" src="./public/img/cross.svg" alt="">
+          </div>
+          <div class="modal-body">
+            線上觀賞人數已超過上限，<br>
+            請稍待再來賞燈
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>

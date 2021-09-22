@@ -11,31 +11,33 @@
     <link rel="stylesheet" href="./public/css/aos/aos.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
+  <style>
+      body {
+          background-color: #1C4E93;
+      }
+  </style>
   <body>
     <main class="live-main position-relative">
       <div class="bg position-absolute h-100 w-100 swiper-box">
         <div class="swiper-container h-100 w-100 live-swiper">
           <div class="swiper-wrapper h-100 w-100">
             <div class="swiper-slide">
-              <img src="./public/img/find_2.png" alt="" />
+              <img src="./public/img/find_6.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./public/img/find_1.png" alt="" />
+              <img src="./public/img/find_5.png" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="./public/img/find_3.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./public/img/find_4.png" alt="" />
+              <img src="./public/img/find_7.png" alt="" />
             </div>
           </div>
         </div>
       </div>
+      <div class="after-bg position-absolute"><img src="./public/img/find-bg3.png" alt=""></div>
       <div class="live-content position-relative w-100 h-100">
         <div class="before position-absolute">
           <p class="live-alert">
-            隨喜您點上一盞祈願燈，<br />
-            <span class="ms-sm-5 ms-3">一燈能破千年暗、一智能滅萬年愚</span>
+            隨喜您點上一盞<span class="fs-2">藥師燈，</span><br />
           </p>
           <div
             class="
@@ -55,9 +57,9 @@
           <p class="wait">等候時間：倒數<span class="second"></span>秒</p>
         </div>
         <!-- <div class="after position-absolute"> -->
-          <div class="pic-card after position-absolute">
+          <div class="pic-card after position-absolute blue-bg">
             <div class="pic-box">
-              <img src="./public/img/picture_2.png" alt="" />
+              <img src="./public/img/picture_3.jpg" alt="" />
             </div>
             <p class="pic-text">
               <span class="big">感謝您</span>，祝福您福智圓滿，<br />
@@ -141,7 +143,7 @@
           disableOnInteraction: false,
         },
       });
-      var second = 16;
+      var second = 15;
       $(".wait").children(".second").text(second);
       var mm = window.setInterval(function () {
         second -= 1;
@@ -151,6 +153,8 @@
           $(".live-content").children(".before").fadeOut(400);
           $(".live-content").children(".after").delay(500).fadeIn(600);
           swiper.autoplay.stop();
+          $(".swiper-box").fadeOut(500);
+          $(".after-bg").delay(500).fadeIn(400);
         }
       }, 1000);
     </script>
