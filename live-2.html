@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="after-bg position-absolute"><img src="./public/img/find-bg3.png" alt=""></div>
+      <div class="after-bg position-absolute"><img src="./public/img/find_1.png" alt=""></div>
       <div class="live-content position-relative w-100 h-100">
         <div class="before position-absolute">
           <p class="live-alert">
@@ -59,7 +59,7 @@
         <!-- <div class="after position-absolute"> -->
           <div class="pic-card after position-absolute blue-bg">
             <div class="pic-box">
-              <img src="./public/img/picture_3.jpg" alt="" />
+              <img src="./public/img/picture_3.png" alt="" />
             </div>
             <p class="pic-text">
               <span class="big">感謝您</span>，祝福您福智圓滿，<br />
@@ -142,19 +142,24 @@
           delay: 3000,
           disableOnInteraction: false,
         },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        speed: 2500,
       });
-      var second = 15;
+      var second = 20;
       $(".wait").children(".second").text(second);
       var mm = window.setInterval(function () {
         second -= 1;
         $(".wait").children(".second").text(second);
         if (second === 0) {
           clearInterval(mm);
-          $(".live-content").children(".before").fadeOut(400);
-          $(".live-content").children(".after").delay(500).fadeIn(600);
+          $(".live-content").children(".before").fadeOut(2000);
+          $(".live-content").children(".after").delay(2000).fadeIn(2000);
           swiper.autoplay.stop();
-          $(".swiper-box").fadeOut(500);
-          $(".after-bg").delay(500).fadeIn(400);
+          $(".swiper-box").fadeOut(2000);
+          $(".after-bg").delay(2000).fadeIn(2000);
         }
       }, 1000);
     </script>

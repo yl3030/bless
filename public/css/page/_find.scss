@@ -44,6 +44,11 @@
   background-position: 75vw 30vh, -20vw 70vh;
   background-repeat: no-repeat;
   padding-bottom: 100px;
+  .inner-box {
+    max-width: 1350px;
+    width: 100%;
+    padding: 0 20px;
+  }
   .send-alert {
     margin-top: 80px;
     color: #fff;
@@ -59,6 +64,10 @@
     margin-bottom: 75px;
     button {
       border-radius: 10px;
+      a {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
       &:hover {
         a {
           color: #fff;
@@ -135,7 +144,8 @@
         margin: 0 auto 30px;
       }
       .loading-text {
-        padding: 10px 20px;
+        width: fit-content;
+        padding: 10px 40px 10px 80px;
         background-color: #fff;
         border-radius: 100px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -274,10 +284,44 @@
   }
 }
 
+@media screen and(max-width:1350px) {
+  .send-main {
+    .inner-box {
+      width: 80%;
+    }
+    .send-content {
+      button {
+        a {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      } 
+    } 
+  } 
+}
+
+@media screen and(max-width:991px) {
+  .send-main {
+    .send-content {
+      button {
+        a {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      } 
+    } 
+  } 
+}
+
 @media screen and(max-width:767px) {
   .send-main {
     .send-content {
       margin-bottom: 37px;
+    }
+  }
+  .send-main {
+    .inner-box {
+      width: 100%;
     }
   }
 }
@@ -290,7 +334,7 @@
         transform: translate(-50%, -50%);
       }
     }
-  }
+  } 
 }
 
 @media screen and(max-width:440px) {

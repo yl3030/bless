@@ -64,6 +64,10 @@
 
 .tour {
     // margin-bottom: 100px;
+    .inner {
+      width: 80%;
+      margin: 0 auto;
+    }
   &-pic {
     .swiper-slide {
       width: 100%;
@@ -84,10 +88,10 @@
 
 .light-up {
     background-color: #F7EAE1;
-    padding: 50px 0 25px;
+    padding: 100px 0 25px;
     .lightup-pic {
         position: absolute;
-        top: -100px;
+        top: -150px;
         left: 0;
         width: 100%;
         .swiper-slide {
@@ -103,7 +107,7 @@
         }
     }
     .text {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
         .main-title {
             .title-name {
                 .big {
@@ -144,10 +148,14 @@
                 color: #fff;
             }
         }
+        // a {
+        //   padding-left: 70px;
+        //   padding-right: 70px;
+        // }
     }
     .text {
       .content {
-        width: 30%;
+        width: 38%;
       }
     }
 }
@@ -203,7 +211,7 @@
 @media screen and (max-width:1200px) {
   .tour {
     .container-pl {
-      padding-left: 50px;
+      // padding-left: 50px;
     }
   }
   .light-up {

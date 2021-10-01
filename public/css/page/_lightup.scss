@@ -32,6 +32,11 @@
             // border-color: $second-color;
             // box-shadow: 0 0 15px 0 rgba(191, 153, 102, 0.72),
             //   inset 0 0 15px 0 rgba(191, 153, 102, 0.5);
+            // border: 2px solid #fff;
+            // border-width: 2px;
+            // border-color: rgba(255, 255, 255,0.6);
+            border-color: #fff;
+            border-color: #e2be90;
             animation: think 1.5s ease-in-out 1s infinite normal none;
           }
         }
@@ -95,6 +100,9 @@
             transition: 0.3s ease-in-out;
           }
           &.active {
+            &::before {
+              border-width: 2px;
+            }
             &::after {
               height: 70px;
             }
@@ -180,6 +188,7 @@
         border-radius: 20px;
         box-sizing: border-box;
         padding: 0.375rem;
+        border-width: 2px;
         &.btn-bg-main {
           &:hover {
             border: 2px solid #E65F3E;
@@ -203,21 +212,21 @@
 
 @keyframes think {
   0% {
-    border-color: $second-color;
+    // border-color: $second-color;
     box-shadow: none;
   }
   33% {
-    border-color: $second-color;
-    box-shadow: 0 0 15px 0 rgba(191, 153, 102, 0.72),
-      inset 0 0 15px 0 rgba(191, 153, 102, 0.5);
+    border-color: #e0c29b;
+    box-shadow: 0 1px 30px 0 rgba(191, 153, 102, 0.72),
+      inset 0 1px 30px 0 rgba(191, 153, 102, 0.5);
   }
   67% {
-    border-color: $second-color;
-    box-shadow: 0 0 15px 0 rgba(191, 153, 102, 0.72),
-      inset 0 0 15px 0 rgba(191, 153, 102, 0.5);
+    border-color: #e0c29b;
+    box-shadow: 0 1px 30px 0 rgba(191, 153, 102, 0.72),
+      inset 0 1px 30px 0 rgba(191, 153, 102, 0.5);
   }
   100% {
-    border-color: $second-color;
+    // border-color: $second-color;
     box-shadow: none;
   }
 }

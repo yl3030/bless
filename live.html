@@ -140,16 +140,21 @@
           delay: 3000,
           disableOnInteraction: false,
         },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        speed: 2500,
       });
-      var second = 16;
+      var second = 20;
       $(".wait").children(".second").text(second);
       var mm = window.setInterval(function () {
         second -= 1;
         $(".wait").children(".second").text(second);
         if (second === 0) {
           clearInterval(mm);
-          $(".live-content").children(".before").fadeOut(400);
-          $(".live-content").children(".after").delay(500).fadeIn(600);
+          $(".live-content").children(".before").fadeOut(2000);
+          $(".live-content").children(".after").delay(2000).fadeIn(1500);
           swiper.autoplay.stop();
         }
       }, 1000);

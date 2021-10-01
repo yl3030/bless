@@ -10,6 +10,37 @@
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./public/css/aos/aos.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "ahn5but",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
   </head>
   <body>
     <header>
@@ -88,9 +119,11 @@
               <li><a href="#">我要點燈</a></li>
               <li><a href="#">我要尋燈</a></li>
             </ul>
-  
+
             <div class="copyright">
-              <p>Copyright ©2015-2021 福智僧團全球資訊網 All rights reserved.</p>
+              <p>
+                Copyright ©2015-2021 福智僧團全球資訊網 All rights reserved.
+              </p>
             </div>
           </nav>
         </div>
@@ -104,16 +137,10 @@
             <img src="./public/img/banner.jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./public/img/banner.jpg" alt="" />
+            <img src="./public/img/index_2.png" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./public/img/banner.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/img/banner.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./public/img/banner.jpg" alt="" />
+            <img src="./public/img/index_1.png" alt="" />
           </div>
         </div>
         <div class="swiper-button-next arrow"></div>
@@ -129,7 +156,7 @@
             <p
               class="title-name"
               data-aos="fade-up"
-              data-aos-duration="700"
+              data-aos-duration="2000"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
             >
@@ -137,10 +164,22 @@
             </p>
             <div class="title-bar"></div>
           </h2>
-          <h3 class="sub-title">
+          <h3
+            class="sub-title"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+          >
             一念祝福善念，從<span class="big">心</span>開始!
           </h3>
-          <p class="content text-center mt-5 mx-auto w-60 lh-lg">
+          <p
+            class="content text-center mt-4 mx-auto w-60 lh-lg font-18"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+          >
             日常老和尚：世間的光明最主要的來源來自三處，太陽、月亮和燈。太陽的光是無比的，月亮的光是清涼的，但太陽只有一個，月亮也只有一個，而燈卻有無限個。
             佛法的智慧就像一盞燈，當燈亮了，滿室的黑暗就不見了。
             燈一盞盞的相傳下去，就是表示薪火相傳、燈燈相續，受著佛法的智慧，這個象徵的意義，有這樣深遠的特別的內涵。
@@ -151,89 +190,102 @@
       <div class="tour position-relative main-pb main-mb">
         <div class="bar position-absolute"></div>
         <div class="row align-items-center">
-          <div class="col-md-5">
-            <div class="container-pl pt-xl-5 pt-0 pe-xl-5 pe-4 pb-md-0 pb-5">
-              <div class="text">
-                <h2 class="main-title">
-                  <p
-                    class="title-name"
+          <div class="col-md-6">
+            <div class="container-pl pt-xl-5 pt-0 pe-xl-5 pe-5 pb-md-0 pb-5">
+              <div class="inner">
+                <div class="text">
+                  <h2 class="main-title">
+                    <p
+                      class="title-name"
+                      data-aos="fade-up"
+                      data-aos-duration="2000"
+                      data-aos-easing="ease-in-out"
+                      data-aos-once="false"
+                    >
+                      賞燈現場
+                    </p>
+                    <div class="title-bar"></div>
+                  </h2>
+                  <div
                     data-aos="fade-up"
-                    data-aos-duration="700"
+                    data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
+                    data-aos-once="false"
                   >
-                    寺院巡禮
-                  </p>
-                  <div class="title-bar"></div>
-                </h2>
-                <p class="content text-center mt-5 mb-xl-5 mb-3 lh-lg">
-                  日常老和尚：世間的光明最主要的來源來自三處，太陽、月亮和燈。太陽的光是無比的，月亮的光是清涼的，但太陽只有一個，
-                </p>
-              </div>
-              <button class="btn btn-border-second w-100 my-3">
-                <a
-                  href="#"
-                  class="
-                    d-flex
-                    align-items-center
-                    justify-content-center
-                    py-2
-                    px-lg-4 px-2
-                  "
-                >
-                <span class="fs-4 me-2 mb-1">藥師燈</span>
-                  <!-- <span class="fs-4 me-2 mb-2">鳳山寺</span><span>大雄寶殿</span> -->
-                    <img
-                    class="origin"
-                    src="./public/img/arrow_light-brown.svg"
-                    alt=""
-                  /><img
-                    class="hover"
-                    src="./public/img/arrow_white2.svg"
-                    alt=""
-                  />
-                </a>
-              </button>
-              <button class="btn btn-border-main w-100 my-3">
-                <a
-                  href="#"
-                  class="
-                    d-flex
-                    align-items-center
-                    justify-content-center
-                    py-2
-                    px-lg-4 px-2
-                  "
-                >
-                <span class="fs-4 me-2 mb-1">祈願燈</span>
-                  <!-- <span class="fs-4 me-2 mb-2">湖山分院</span
+                    <p
+                      class="
+                        content
+                        text-center
+                        mt-5
+                        mb-xl-5 mb-3
+                        lh-lg
+                        font-18
+                      "
+                    >
+                      《施燈供德經》說：在佛塔佛殿或佛堂布施燈明的人，可以得到相貌莊嚴、資材充足、有大善根、有大智慧等等無數的福報。
+                    </p>
+                    <button class="btn btn-border-second w-100 my-3">
+                      <a
+                        href="#"
+                        class="
+                          d-flex
+                          align-items-center
+                          justify-content-center
+                          py-2
+                          px-lg-4 px-2
+                        "
+                      >
+                        <span class="fs-4 me-2 mb-1">藥師燈</span>
+                        <!-- <span class="fs-4 me-2 mb-2">鳳山寺</span><span>大雄寶殿</span> -->
+                        <img
+                          class="origin"
+                          src="./public/img/arrow_light-brown.svg"
+                          alt=""
+                        /><img
+                          class="hover"
+                          src="./public/img/arrow_white2.svg"
+                          alt=""
+                        />
+                      </a>
+                    </button>
+                    <button class="btn btn-border-main w-100 my-3">
+                      <a
+                        href="#"
+                        class="
+                          d-flex
+                          align-items-center
+                          justify-content-center
+                          py-2
+                          px-lg-4 px-2
+                        "
+                      >
+                        <span class="fs-4 me-2 mb-1">祈願燈</span>
+                        <!-- <span class="fs-4 me-2 mb-2">湖山分院</span
                   ><span>大雄寶殿</span> -->
-                  <img
-                    class="origin"
-                    src="./public/img/arrow_deep-brown.svg"
-                    alt=""
-                  /><img
-                    class="hover"
-                    src="./public/img/arrow_white2.svg"
-                    alt=""
-                  />
-                </a>
-              </button>
+                        <img
+                          class="origin"
+                          src="./public/img/arrow_deep-brown.svg"
+                          alt=""
+                        /><img
+                          class="hover"
+                          src="./public/img/arrow_white2.svg"
+                          alt=""
+                        />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-6">
             <div
               class="swiper-container tour-pic"
               data-aos="fade-left"
-              data-aos-duration="700"
+              data-aos-duration="2000"
               data-aos-easing="ease-in-out"
             >
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./public/img/index_3.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./public/img/index_3.png" alt="" />
-                </div>
                 <div class="swiper-slide">
                   <img src="./public/img/index_3.png" alt="" />
                 </div>
@@ -245,23 +297,17 @@
       </div>
       <!-- 我要點燈 -->
       <div class="light-up position-relative main-pb">
-        <div class="container">
+        <div class="inner-box">
           <div class="slogan position-absolute">一念祝福善念，從心開始</div>
           <div class="row">
             <div class="col-lg-6 position-relative">
               <div
                 class="swiper-container lightup-pic"
                 data-aos="fade-right"
-                data-aos-duration="700"
+                data-aos-duration="2000"
                 data-aos-easing="ease-in-out"
               >
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./public/img/index_4.png" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./public/img/index_4.png" alt="" />
-                  </div>
                   <div class="swiper-slide">
                     <img src="./public/img/index_4.png" alt="" />
                   </div>
@@ -275,7 +321,7 @@
                   <p
                     class="title-name"
                     data-aos="fade-up"
-                    data-aos-duration="700"
+                    data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
                     data-aos-once="false"
                   >
@@ -283,14 +329,18 @@
                   </p>
                   <div class="title-bar"></div>
                 </h2>
-                <div class="content mx-auto">
-                  <p class="text-center mt-5 lh-lg">
+                <div class="content mx-auto" data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false">
+                  <p class="text-center mt-5 lh-lg font-18">
                     用一盞燈讓您內心的善良照亮每個生命黑暗的角落，照亮每個正在祈求的生命!我們的心願可以學習像佛菩薩那樣，努力用菩提心意陪伴每個想要離苦得樂的有情呀!
                   </p>
                   <button class="btn btn-bg-main mx-auto d-block mt-5">
-                    <a href="#" class="d-block py-1 px-5"
-                      >我要 <span class="fs-4 ms-2">點燈</span></a
-                    >
+                    <a href="#" class="d-block py-1 px-70px"
+                      >我要 <span class="fs-4 ms-2">點燈</span
+                      ><img src="./public/img/arrow_white2.svg" alt=""
+                    /></a>
                   </button>
                   <!-- <div class="btn-box row justify-content-between mt-5">
                     <div class="col-sm-6 my-sm-0 my-2">
@@ -319,7 +369,7 @@
         <img
           class="fing-bg"
           data-aos="fade-up"
-          data-aos-duration="700"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out"
           data-aos-once="false"
           src="./public/img/index_2.png"
@@ -330,7 +380,7 @@
             <p
               class="title-name text-white"
               data-aos="fade-up"
-              data-aos-duration="700"
+              data-aos-duration="2000"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
             >
@@ -338,13 +388,13 @@
             </p>
             <div class="title-bar bg-white"></div>
           </h2>
-          <p class="content text-center mt-5 lh-lg mx-auto text-white">
+          <p class="content text-center mt-5 lh-lg mx-auto text-white font-18">
             滿室的黑暗就不見了。
             燈一盞盞的相傳下去，就是表示薪火相傳、燈燈相續，受著佛法的智慧，這個象徵的意義，有這樣深遠的特別的內涵。
           </p>
           <button class="btn btn-bg-second mx-auto d-block mt-5">
-            <a href="#" class="d-block py-1 px-5"
-              >我要<span class="fs-4 ms-2">尋燈</span></a
+            <a href="#" class="d-block py-1 px-70px w-100"
+              >我要<span class="big ms-2">尋燈</span></a
             >
           </button>
         </div>
@@ -355,7 +405,7 @@
           <p
             class="title-name"
             data-aos="fade-up"
-            data-aos-duration="700"
+            data-aos-duration="2000"
             data-aos-easing="ease-in-out"
             data-aos-once="false"
           >
@@ -363,10 +413,13 @@
           </p>
           <div class="title-bar"></div>
         </h2>
-        <div class="swiper-story-box container position-relative" data-aos="fade-up"
-        data-aos-duration="700"
-        data-aos-easing="ease-in-out"
-        data-aos-once="false">
+        <div
+          class="swiper-story-box inner-box position-relative"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-once="false"
+        >
           <div class="swiper-container swiper-story">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -377,126 +430,7 @@
                     </div>
                   </div>
                   <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
-                      <p class="lh-lg">
-                        母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
-                      </p>
-                      <p class="text-end mt-4">2021.6.6 陳居士</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="pic rounded-circle overflow-hidden">
-                      <img src="./public/img/index_5.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="col-md-9">
-                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5">
+                    <div class="text ps-md-5 pt-md-0 ps-0 pt-5 font-18">
                       <p class="lh-lg">
                         母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子……母親的性格非常直率善良，從不忘他人恩、盡力助人。一日看到一隻受傷的鴿子母親的性格非常直率善良，從不忘他人恩、盡力助人。
                       </p>
@@ -508,31 +442,44 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <div class="story-next arrow"><img src="./public/img/arrow_slider.svg" alt=""></div>
-          <div class="story-prev arrow"><img src="./public/img/arrow_slider.svg" alt=""></div>
+          <div class="story-next arrow">
+            <img src="./public/img/arrow_slider.svg" alt="" />
+          </div>
+          <div class="story-prev arrow">
+            <img src="./public/img/arrow_slider.svg" alt="" />
+          </div>
         </div>
         <button class="btn btn-border-main d-block mx-auto mt-5">
-          <a href="#" class="
-          d-flex
-          align-items-center
-          justify-content-center
-          py-2
-          px-5
-        "
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center py-2 px-5"
             ><span>我要點燈</span
-            ><img class="origin" src="./public/img/arrow_deep-brown.svg" alt=""
-          /><img
-          class="hover"
-          src="./public/img/arrow_white2.svg"
-          alt=""
-        /></a>
+            ><img
+              class="origin mb-0"
+              src="./public/img/arrow_deep-brown.svg"
+              alt="" /><img
+              class="hover mb-0"
+              src="./public/img/arrow_white2.svg"
+              alt=""
+          /></a>
         </button>
       </div>
     </main>
     <footer>
       <div class="top main-py">
-        <div class="container d-md-flex d-block justify-content-between align-items-center">
-          <img class="logo d-block mx-md-0 mx-auto mb-md-0 mb-5" src="./public/img/logo_footer.png" alt="" />
+        <div
+          class="
+            inner-box
+            d-md-flex d-block
+            justify-content-between
+            align-items-center
+          "
+        >
+          <img
+            class="logo d-block mx-md-0 mx-auto mb-md-0 mb-5"
+            src="./public/img/logo_footer.png"
+            alt=""
+          />
           <div class="contact mx-md-0 mx-auto mb-md-0 mb-5">
             <ul>
               <li>
@@ -591,6 +538,11 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        speed: 2000,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
@@ -603,10 +555,15 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
         },
+        speed: 2000,
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
       });
       var swiper_tour = new Swiper(".lightup-pic", {
         loop: true,
@@ -615,10 +572,15 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
         },
+        speed: 2000,
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
       });
       var swiper_story = new Swiper(".swiper-story", {
         loop: true,
@@ -631,10 +593,15 @@
           nextEl: ".story-next",
           prevEl: ".story-prev",
         },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
         },
+        speed: 2000,
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
       });
     </script>
   </body>
